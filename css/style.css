@@ -12,11 +12,33 @@
     display: flex;
 }
 
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
 .container{
     width: 100%;
 }
 
+.txt-end{
+    text-align: end;
+}
 
+
+/*
+                                                GENERIC CLASS FOR COLOR AND BACKGROUND COLOR
+*/
+.color-red{
+    color: red;
+}
 /*
                                                         END GENERIC CLASS
 */
@@ -25,6 +47,15 @@
 /*
                                                         GENERIC ELEMENT
 */
+
+/*Generic formatting button*/
+button{
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
 
 
 /*
@@ -43,6 +74,8 @@ header{
     background-color: black;
 
     padding: 1rem;
+
+    min-width: 200px;
 }
 
 /*Header container*/
@@ -72,7 +105,7 @@ header nav ul li{
 }
 
 /*Decoration none for element a, in the nav bar*/
-header nav ul li a{
+header ul li a{
     text-decoration: none;
 }
 
@@ -87,12 +120,27 @@ header nav.playlist>div.crete-playlist {
 }
 
 /*box for the first-child of div create*/
-header nav.playlist>div.crete-playlist span:first-child{
+header nav.playlist>div.crete-playlist button{
+    padding: 1rem;
     border: 1px solid black;
-    width: 5px;
-    height: 5px;
+    border-radius: 0px;
 
+    margin-right: .5rem;
     
+}
+
+
+/*box users and install app*/
+header div.user{
+    background-color: beige;
+    border: 1px solid black;
+
+    margin-top: 12rem;
+}
+
+/*Decoration none for a element*/
+header div.user a{
+    text-decoration: none;
 }
 
 /*
@@ -108,10 +156,33 @@ main{
     height: calc(100vh - 60px);
     
     overflow-y: scroll;
-
-    padding: 1rem;
 }
 
+/*
+                                                        SECTION UPGRADE
+*/
+
+section.upgrade{
+    background-color: #121319;
+    height: 80px;
+}
+
+/*div button for height of parent (for flex center)*/
+section.upgrade div.button{
+    height: 100%;
+    padding-right: 2rem;
+}
+/*
+                                                        END SECTION UPGRADE
+*/
+
+/*
+                                                        SECTION MAIN-VIEW
+*/
+
+section.main-view{
+    padding: 1rem;
+}
 /*box per le canzoni*/
 main div.card{
     width: 150px;
@@ -122,6 +193,10 @@ main div.card{
 
     margin-right: 2%;
 }
+
+/*
+                                                       END SECTION MAIN-VIEW
+*/
 
 /*
                                                         END MAIN
@@ -135,6 +210,9 @@ footer{
     height: 60px;
 
     background-color: brown;
+
+    position: fixed;
+    z-index: 3;
 }
 
 /*
