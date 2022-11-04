@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+                                                        GENERIC CLASS
+*/
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+}
+
+
+/*
+                                                        END GENERIC CLASS
+*/
+
+
+/*
+                                                        GENERIC ELEMENT
+*/
+
+
+/*
+                                                        END GENERIC CLASS
+*/
+
+/*
+                                                        HEADER
+*/
+header{ 
+    width: 200px;
+    height: calc(100vh - 60px);
+    
+    flex-grow: 1;
+
+    background-color: black;
+
+    padding: 1rem;
+}
+
+/*Header container*/
+header div.container{
+    width: 100%;
+}
+
+/*Logo*/
+header div.logo{
+    height: 60px;
+    
+    background-color: beige;
+    border: 1px solid black;
+
+    margin-bottom: .5rem;
+}
+
+/*Navigation bar*/
+header nav.nav{
+    background-color: beige;
+    margin-bottom: 1rem;
+}
+
+/*for correct spacing*/
+header nav ul li{
+    padding-bottom: 1rem;
+}
+
+/*Decoration none for element a, in the nav bar*/
+header nav ul li a{
+    text-decoration: none;
+}
+
+/*Padding bottom for h2, child of nav.playlist*/
+header nav.playlist>h2{
+    padding-bottom: 1rem;
+}
+
+/*For correct spacing*/
+header nav.playlist>div.crete-playlist {
+    margin-bottom: 1rem;
+}
+
+/*box for the first-child of div create*/
+header nav.playlist>div.crete-playlist span:first-child{
+    border: 1px solid black;
+    width: 5px;
+    height: 5px;
+
+    
+}
+
+/*
+                                                        END HEADER
+*/
+
+/*
+                                                        MAIN
+*/
+main{
+    background-color: aquamarine;
+    width: calc(100% - 200px);
+    height: calc(100vh - 60px);
+    
+    overflow-y: scroll;
+
+    padding: 1rem;
+}
+
+/*box per le canzoni*/
+main div.card{
+    width: 150px;
+    height: 150px;
+
+    background-color: white;
+    border: 1px solid black;
+
+    margin-right: 2%;
+}
+
+/*
+                                                        END MAIN
+*/
+
+/*
+                                                        FOOTER
+*/
+footer{
+    width: 100%;
+    height: 60px;
+
+    background-color: brown;
+}
+
+/*
+                                                        END FOOTER
+*/
