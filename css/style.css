@@ -49,6 +49,15 @@
     border-radius: 50%;
 }
 
+.long{
+    width: 60%;
+    margin: 0 1rem;
+}
+
+.mini{
+    width: 20%;
+}
+
 
 /*
                                                 GENERIC CLASS FOR COLOR AND BACKGROUND COLOR
@@ -238,13 +247,13 @@ section.main-view >h2{
 }
 /*box per le canzoni*/
 section.main-view div.card{
-    width: calc(100% / 6);
+    width: calc((100% / 6) - .5rem);
     height: 150px;
 
     background-color: white;
     border: 1px solid black;
 
-    margin-right: 2%;
+    margin-right: .5rem;
     margin-bottom: 1rem;
 
 }
@@ -275,6 +284,46 @@ footer{
 
     position: fixed;
     z-index: 3;
+}
+
+
+footer div.box{
+    background-color: beige;
+    border: 1px red dotted;
+
+    height: 80%;
+}
+
+
+.border{
+    border: 1px solid black;
+    width: 33%;
+}
+
+/*Footer box middle with player*/
+footer div.long>div.player{
+    width: 100%;
+    height: calc(100% / 2);
+    border: 1px solid black;
+}
+
+/*For remove padding at the button*/
+footer div.long>div.player button{
+    padding: 0;
+}
+
+/*Margine per i pulstanti del player*/
+footer div.long>div.player li{
+    margin-right: .5rem;
+}
+
+footer div.long>div.player:last-child{
+    padding: 0 3rem;
+}
+
+/*Formattazione dell'ultimo box*/
+footer div.box:last-child>span{
+    padding-right: .5rem;
 }
 
 /*
