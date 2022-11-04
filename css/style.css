@@ -24,12 +24,29 @@
     justify-content: flex-end;
 }
 
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .container{
     width: 100%;
 }
 
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 .txt-end{
     text-align: end;
+}
+
+.border-radius{
+    border-radius: 50%;
 }
 
 
@@ -48,6 +65,10 @@
                                                         GENERIC ELEMENT
 */
 
+/*Background color for body*/
+body{
+    background-color: #202020;
+}
 /*Generic formatting button*/
 button{
     padding: 1rem;
@@ -55,6 +76,14 @@ button{
     border-radius: 20px;
 
     cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -165,6 +194,7 @@ main{
 section.upgrade{
     background-color: #121319;
     height: 80px;
+    width: 100%;
 }
 
 /*div button for height of parent (for flex center)*/
@@ -177,22 +207,54 @@ section.upgrade div.button{
 */
 
 /*
+                                                        SECTION NAV-CONTENT
+*/
+
+/*Section nav, for category*/
+section.nav-content{
+    background-color: beige;
+    border: 1px solid black;
+    width: 60%;
+    height: 20px;
+
+    margin: 0 auto;
+}
+
+/*
+                                                        END SECTION NAV-CONTENT
+*/
+
+/*
                                                         SECTION MAIN-VIEW
 */
 
 section.main-view{
     padding: 1rem;
 }
+
+/*padding for h2 element child of section main view*/
+section.main-view >h2{
+    padding-bottom: 1rem;
+}
 /*box per le canzoni*/
-main div.card{
-    width: 150px;
+section.main-view div.card{
+    width: calc(100% / 6);
     height: 150px;
 
     background-color: white;
     border: 1px solid black;
 
     margin-right: 2%;
+    margin-bottom: 1rem;
+
 }
+
+/*Box di testo sopra i box delle canzoni*/
+section.main-view div.txt{
+    margin: 1rem 0;
+    width: 100%;
+}
+
 
 /*
                                                        END SECTION MAIN-VIEW
@@ -206,7 +268,7 @@ main div.card{
                                                         FOOTER
 */
 footer{
-    width: 100%;
+    width: 80%;
     height: 60px;
 
     background-color: brown;
