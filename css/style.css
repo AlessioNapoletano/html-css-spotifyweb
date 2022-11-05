@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,59 +8,67 @@
                                                         GENERIC CLASS
 */
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-align-center{
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-center {
     align-items: center;
 }
 
-.flex-justify-center{
+.flex-justify-center {
     justify-content: center;
 }
 
-.flex-end{
+.flex-end {
     justify-content: flex-end;
 }
 
-.flex-space-between{
+.flex-space-between {
     justify-content: space-between;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.container{
+.container {
     width: 100%;
 }
 
-.main-container{
-    width: 80%;
+.main-container {
+    width: 82%;
     margin: 0 auto;
 }
 
-.txt-end{
+.txt-end {
     text-align: end;
 }
 
-.txt-center{
+.txt-center {
     text-align: center;
 }
 
-.border-radius{
+.border-radius {
     border-radius: 50%;
 }
 
 
 
-.long{
+.long {
     width: 60%;
     margin: 0 1rem;
 }
 
-.mini{
+.mini {
     width: 20%;
 }
 
@@ -68,9 +76,14 @@
 /*
                                                 GENERIC CLASS FOR COLOR AND BACKGROUND COLOR
 */
-.color-red{
+.color-red {
     color: red;
 }
+
+.color-white {
+    color: white;
+}
+
 /*
                                                         END GENERIC CLASS
 */
@@ -81,11 +94,12 @@
 */
 
 /*Background color for body*/
-body{
+body {
     background-color: #202020;
 }
+
 /*Generic formatting button*/
-button{
+button {
     padding: 1rem;
     border: none;
     border-radius: 20px;
@@ -93,13 +107,16 @@ button{
     cursor: pointer;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
+
+
 
 
 /*
@@ -109,10 +126,24 @@ a{
 /*
                                                         HEADER
 */
-header{ 
+
+/*header nascosto*/
+aside.none {
+    display: none;
+    background-color: black;
+    width: 50px;
+}
+
+aside.none div {
+    border: 1px solid white;
+    font-size: 2rem;
+}
+
+/*HEADER*/
+header {
     width: 200px;
     height: calc(100vh - 60px);
-    
+
     flex-grow: 1;
 
     background-color: black;
@@ -123,14 +154,14 @@ header{
 }
 
 /*Header container*/
-header div.container{
+header div.container {
     width: 100%;
 }
 
 /*Logo*/
-header div.logo{
+header div.logo {
     height: 60px;
-    
+
     background-color: beige;
     border: 1px solid black;
 
@@ -138,23 +169,23 @@ header div.logo{
 }
 
 /*Navigation bar*/
-header nav.nav{
+header nav.nav {
     background-color: beige;
     margin-bottom: 1rem;
 }
 
 /*for correct spacing*/
-header nav ul li{
+header nav ul li {
     padding-bottom: 1rem;
 }
 
 /*Decoration none for element a, in the nav bar*/
-header ul li a{
+header ul li a {
     text-decoration: none;
 }
 
 /*Padding bottom for h2, child of nav.playlist*/
-header nav.playlist>h2{
+header nav.playlist>h2 {
     padding-bottom: 1rem;
 }
 
@@ -164,18 +195,18 @@ header nav.playlist>div.crete-playlist {
 }
 
 /*box for the first-child of div create*/
-header nav.playlist>div.crete-playlist button{
+header nav.playlist>div.crete-playlist button {
     padding: 1rem;
     border: 1px solid black;
     border-radius: 0px;
 
     margin-right: .5rem;
-    
+
 }
 
 
 /*box users and install app*/
-header div.user{
+header div.user {
     background-color: beige;
     border: 1px solid black;
 
@@ -183,7 +214,7 @@ header div.user{
 }
 
 /*Decoration none for a element*/
-header div.user a{
+header div.user a {
     text-decoration: none;
 }
 
@@ -194,11 +225,11 @@ header div.user a{
 /*
                                                         MAIN
 */
-main{
+main {
     background-color: aquamarine;
     width: calc(100% - 200px);
     height: calc(100vh - 60px);
-    
+
     overflow-y: scroll;
 }
 
@@ -206,17 +237,18 @@ main{
                                                         SECTION UPGRADE
 */
 /*first section in the page for upgrade*/
-section.upgrade{
+section.upgrade {
     background-color: #121319;
     height: 80px;
     width: 100%;
 }
 
 /*div button for height of parent (for flex center)*/
-section.upgrade div.button{
+section.upgrade div.button {
     height: 100%;
     padding-right: 2rem;
 }
+
 /*
                                                         END SECTION UPGRADE
 */
@@ -226,11 +258,10 @@ section.upgrade div.button{
 */
 
 /*Section nav, for category*/
-section.nav-content{
+section.nav-content {
     background-color: beige;
     border: 1px solid black;
-    width: 60%;
-    height: 20px;
+    width: 70%;
 
     margin: 0 auto;
 }
@@ -243,20 +274,22 @@ section.nav-content{
                                                         SECTION MAIN-VIEW
 */
 
-section.main-view{
+section.main-view {
     padding: 1rem;
 }
 
 /*padding for h2 element child of section main view*/
-section.main-view >h2{
+section.main-view>h2 {
     padding-bottom: 1rem;
 }
+
 /*box per le canzoni*/
-section.main-view div.card{
+section.main-view div.card {
     width: calc((100% / 6) - .5rem);
     height: 160px;
 
-    
+    min-width: 120px;
+
     border: 1px solid black;
 
     margin-right: .5rem;
@@ -265,14 +298,29 @@ section.main-view div.card{
 }
 
 /*Grandezze dell'immagine nella carta*/
-section.main-view div.card div.img{
+section.main-view div.card div.img {
     background-color: white;
     width: 100%;
     height: 70%;
 }
 
+/*for control display of p in div image*/
+section.main-view div.card div.img p {
+    display: none;
+}
+
+/*for control display of p in div image*/
+section.main-view div.card div.img:hover p {
+    display: block;
+}
+
+/*for change color of image*/
+section.main-view div.card div.img:hover {
+    background-color: #cecccc;
+}
+
 /*Box di testo sopra i box delle canzoni*/
-section.main-view div.txt{
+section.main-view div.txt {
     margin: 1rem 0;
     width: 100%;
 }
@@ -289,18 +337,17 @@ section.main-view div.txt{
 /*
                                                         FOOTER
 */
-footer{
-    width: 80%;
+footer {
     height: 60px;
 
     background-color: brown;
 
-    position: fixed;
+    position: relative;
     z-index: 3;
 }
 
 
-footer div.box{
+footer div.box {
     background-color: beige;
     border: 1px red dotted;
 
@@ -308,34 +355,34 @@ footer div.box{
 }
 
 
-.border{
+.border {
     border: 1px solid black;
     width: 33%;
 }
 
 /*Footer box middle with player*/
-footer div.long>div.player{
+footer div.long>div.player {
     width: 100%;
     height: calc(100% / 2);
     border: 1px solid black;
 }
 
 /*For remove padding at the button*/
-footer div.long>div.player button{
+footer div.long>div.player button {
     padding: 0;
 }
 
 /*Margine per i pulstanti del player*/
-footer div.long>div.player li{
+footer div.long>div.player li {
     margin-right: .5rem;
 }
 
-footer div.long>div.player:last-child{
+footer div.long>div.player:last-child {
     padding: 0 3rem;
 }
 
 /*Formattazione dell'ultimo box*/
-footer div.box:last-child>span{
+footer div.box:last-child>span {
     padding-right: .5rem;
 }
 
@@ -350,3 +397,59 @@ footer div.box:last-child>span{
                                                     MEDIA QUERY
 */
 
+/*medium*/
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: red;
+    }
+
+    /*
+    -----> SECTION NAV-CONTENT
+    */
+
+    section.nav-content ul {
+        flex-wrap: wrap;
+    }
+
+    /*li Va a capo in centro*/
+    section.nav-content li {
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    /*
+    -----> END SECTION NAV-CONTENT ------------------------------------------------------------------------------------
+    */
+}
+
+/*small*/
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+
+/*x-small*/
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: aqua;
+    }
+
+    /*HEADER AND ASIDE, SHOW AND HIDDEN*/
+    header {
+        display: none;
+    }
+
+    aside.none {
+        display: block;
+    }
+
+    /*
+    MAIN
+    */
+    main {
+        width: calc(100% - 50px);
+    }
+
+}
