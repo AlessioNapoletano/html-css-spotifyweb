@@ -45,9 +45,15 @@
     text-align: end;
 }
 
+.txt-center{
+    text-align: center;
+}
+
 .border-radius{
     border-radius: 50%;
 }
+
+
 
 .long{
     width: 60%;
@@ -199,7 +205,7 @@ main{
 /*
                                                         SECTION UPGRADE
 */
-
+/*first section in the page for upgrade*/
 section.upgrade{
     background-color: #121319;
     height: 80px;
@@ -248,14 +254,21 @@ section.main-view >h2{
 /*box per le canzoni*/
 section.main-view div.card{
     width: calc((100% / 6) - .5rem);
-    height: 150px;
+    height: 160px;
 
-    background-color: white;
+    
     border: 1px solid black;
 
     margin-right: .5rem;
     margin-bottom: 1rem;
 
+}
+
+/*Grandezze dell'immagine nella carta*/
+section.main-view div.card div.img{
+    background-color: white;
+    width: 100%;
+    height: 70%;
 }
 
 /*Box di testo sopra i box delle canzoni*/
@@ -329,3 +342,11 @@ footer div.box:last-child>span{
 /*
                                                         END FOOTER
 */
+
+
+
+
+/*
+                                                    MEDIA QUERY
+*/
+
