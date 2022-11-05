@@ -377,8 +377,26 @@ footer div.long>div.player li {
     margin-right: .5rem;
 }
 
-footer div.long>div.player:last-child {
-    padding: 0 3rem;
+/*Barra del player*/
+footer div.long>div.player:last-child div {
+    border: 1px solid black;
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+}
+/*span nel player*/
+footer div.long>div.player:last-child span{
+    padding: 0 .5rem;
+}
+
+footer div.long>div.player:last-child div.bar {
+    background-color: red;
+    width: 60%;
+    height: 100%
+}
+footer div.long>div.player:last-child div.bar:last-child{
+    background-color: grey;
+    width: 40%;
 }
 
 /*Formattazione dell'ultimo box*/
