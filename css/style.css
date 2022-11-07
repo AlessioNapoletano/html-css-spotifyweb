@@ -8,11 +8,11 @@
                                                         GENERIC CLASS
 */
 
-.p-relative{
+.p-relative {
     position: relative;
 }
 
-.p-absolute{
+.p-absolute {
     position: absolute;
 }
 
@@ -84,8 +84,8 @@
 /*
                                                 GENERIC CLASS FOR COLOR AND BACKGROUND COLOR
 */
-.color-red {
-    color: red;
+.color-brown-font {
+    color: #717171;
 }
 
 .color-white {
@@ -104,6 +104,8 @@
 /*Background color for body*/
 body {
     background-color: #202020;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Generic formatting button*/
@@ -121,6 +123,7 @@ ul li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 
@@ -152,8 +155,6 @@ header {
     width: 200px;
     height: calc(100vh - 60px);
 
-    flex-grow: 1;
-
     background-color: black;
 
     padding: 1rem;
@@ -171,16 +172,12 @@ header div.container {
 /*Logo*/
 header div.logo {
     height: 60px;
-
-    background-color: beige;
-    border: 1px solid black;
-
+    width: 80%;
     margin-bottom: .5rem;
 }
 
 /*Navigation bar*/
 header nav.nav {
-    background-color: beige;
     margin-bottom: 1rem;
 }
 
@@ -189,9 +186,18 @@ header nav ul li {
     padding-bottom: 1rem;
 }
 
-/*Decoration none for element a, in the nav bar*/
+/*Decoration none for element a, in the nav bar
+color a*/
 header ul li a {
     text-decoration: none;
+    color: #717171;
+}
+
+/*Hover of a*/
+header ul li a:hover {
+    color: white;
+    padding: .5rem;
+    border-left: 3px solid green;
 }
 
 /*Padding bottom for h2, child of nav.playlist*/
@@ -207,7 +213,7 @@ header nav.playlist>div.crete-playlist {
 /*box for the first-child of div create*/
 header nav.playlist>div.crete-playlist button {
     padding: 1rem;
-    border: 1px solid black;
+    background-color: #a1a1a1;
     border-radius: 0px;
 
     margin-right: .5rem;
@@ -217,15 +223,18 @@ header nav.playlist>div.crete-playlist button {
 
 /*box users and install app*/
 header div.user {
-    background-color: beige;
-    border: 1px solid black;
-
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
-/*Decoration none for a element*/
+/*color of a*/
 header div.user a {
-    text-decoration: none;
+    color: #717171;
+}
+
+
+/*color a in hover*/
+header div.user a:hover {
+    color: white;
 }
 
 /*
@@ -302,7 +311,7 @@ section.main-view div.card {
 }
 
 /*Grandezze dell'immagine nella carta*/
-section.main-view div.card div.img img{
+section.main-view div.card div.img img {
     max-width: 100%;
 }
 
@@ -326,7 +335,6 @@ section.main-view div.txt {
     margin: 1rem 0;
     width: 100%;
 }
-
 
 /*
                                                        END SECTION MAIN-VIEW
@@ -439,7 +447,7 @@ footer div.box:last-child>span {
         padding-bottom: 1rem;
     }
 
-    section.main-view> div.row{
+    section.main-view>div.row {
         flex-wrap: wrap;
     }
 
@@ -448,11 +456,11 @@ footer div.box:last-child>span {
     */
 
 
-     /*
+    /*
     -----> SECTION NAV-CONTENT
     */
     section.main-view div.card {
-    
+
         width: calc((100% / 4) - .5rem);
     }
 
@@ -468,7 +476,7 @@ footer div.box:last-child>span {
     }
 
     section.main-view div.card {
-    
+
         width: calc((100% / 2) - .5rem);
     }
 }
