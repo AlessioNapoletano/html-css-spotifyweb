@@ -185,7 +185,7 @@ header ul li a {
 header ul li a:hover {
     color: white;
     padding: .5rem;
-    border-left: 3px solid green;
+    border-left: 3px solid #d0ff53;
 }
 
 /*Padding bottom for h2, child of nav.playlist*/
@@ -290,11 +290,18 @@ section.upgrade div.button>button {
 
 /*Section nav, for category*/
 section.nav-content {
-    background-color: beige;
-    border: 1px solid black;
     width: 70%;
+    padding-top: .4rem;
 
     margin: 0 auto;
+}
+
+/*Color a in Hover, and border bottom*/
+section.nav-content a:hover{
+    color: white;
+    border-bottom: 2px solid #d0ff53;
+
+    font-weight: bold;
 }
 
 /*
@@ -314,10 +321,16 @@ section.main-view>h2 {
     padding-bottom: 1rem;
 }
 
+/*Box di testo sopra i box delle canzoni*/
+section.main-view div.title-row {
+    margin: 1rem 0;
+    width: 100%;
+}
+
 /*box per le canzoni*/
 section.main-view div.card {
     width: calc((100% / 6) - .5rem);
-    border: 1px solid black;
+    border: 1px dotted white;
     margin-right: .5rem;
     margin-bottom: 1rem;
 }
@@ -330,7 +343,9 @@ section.main-view div.card div.img img {
 /*for control display of p in div image*/
 section.main-view div.card div.img p {
     display: none;
+    font-size: 4rem;
 }
+
 
 /*for control display of p in div image*/
 section.main-view div.card div.img:hover p {
@@ -342,11 +357,27 @@ section.main-view div.card div.img:hover {
     opacity: 50%;
 }
 
-/*Box di testo sopra i box delle canzoni*/
-section.main-view div.txt {
-    margin: 1rem 0;
-    width: 100%;
+
+/*Description div card*/
+section.main-view div.card div.description h3,
+section.main-view div.card div.description p{
+    padding-top: .5rem;
+    font-size: 1rem;
+    
 }
+
+/*Possibile metterlo internamente nell'index*/
+section.main-view div.card div.description p{
+    color: #717171;
+    
+}
+
+/*Font and padding for p elemtent child of div row*/
+section.main-view div.row p{
+    padding: .5rem 0 1rem 0;
+    font-size: .8rem;
+}
+
 
 /*
                                                        END SECTION MAIN-VIEW
