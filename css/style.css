@@ -139,7 +139,7 @@ a {
 */
 
 /*HEADER*/
-header {
+header.header-full {
     width: 200px;
     height: calc(100vh - 60px);
 
@@ -181,6 +181,12 @@ header ul li a {
     color: #717171;
 }
 
+/*Formatting img in a element*/
+header ul li a img{
+    width: 25px;
+    margin-right: .4rem;
+}
+
 /*Hover of a*/
 header ul li a:hover {
     color: white;
@@ -196,6 +202,11 @@ header nav.playlist>h2 {
 /*For correct spacing*/
 header nav.playlist>div.crete-playlist {
     margin-bottom: 1rem;
+}
+
+/*Hover bottom*/
+header nav.playlist>div.crete-playlist:hover div {
+    color: white;
 }
 
 /*box for the first-child of div create*/
@@ -227,15 +238,15 @@ header div.user a:hover {
 
 
 /*header nascosto*/
-aside.none {
+header.header-mini {
     display: none;
     background-color: black;
     width: 50px;
 }
 
-aside.none div {
-    font-size: 2rem;
-    padding: .3rem 0;
+header.header-mini div>img{
+    margin-top: .5rem;
+    width: 60%;
 }
 
 
@@ -280,6 +291,7 @@ section.upgrade div.button>button {
     padding: .7rem 2.5rem;
 }
 
+
 /*
                                                         END SECTION UPGRADE
 */
@@ -290,7 +302,7 @@ section.upgrade div.button>button {
 
 /*Section nav, for category*/
 section.nav-content {
-    width: 70%;
+    width:80%;
     padding-top: .4rem;
 
     margin: 0 auto;
@@ -393,7 +405,7 @@ section.main-view div.row p{
 footer {
     height: 60px;
 
-    background-color: brown;
+    background-color: #2c2c2c;
 
     position: relative;
     z-index: 3;
@@ -532,11 +544,11 @@ footer div.box:last-child>span {
     }
 
     /*HEADER AND ASIDE, SHOW AND HIDDEN*/
-    header {
+    header.header-full {
         display: none;
     }
 
-    aside.none {
+    header.header-mini {
         display: block;
     }
 

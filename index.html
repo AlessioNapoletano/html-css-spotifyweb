@@ -27,7 +27,7 @@
     <div class="main-container">
         <div class="wrapper flex">
             <!--Show Header fino a x-small view-->
-            <header>
+            <header class="header-full flex flex-column flex-space-between">
                 <div class="container">
 
                     <!--Logo Spotify-->
@@ -39,21 +39,24 @@
                     <nav class="nav">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-house"></i>
-                                    Home</a>
+                                <a href="#" class="flex flex-align-center">
+                                    <img src="img/home.svg" alt="">
+                                    <span>home</span>
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    Cerca</a>
+                                <a href="#" class="flex flex-align-center">
+                                    <img src="img/search.svg" alt="">
+                                    <span>Cerca</span>
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-pause"></i>
-                                    La Tua libreria</a>
+                                <a href="#" class="flex flex-align-center">
+                                    <img src="img/libreria.svg" alt="">
+                                    <span>La Tua libreria</span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -67,10 +70,10 @@
                         <!--Create playlist-->
                         <div class="crete-playlist flex">
                             <button class="box flex">
-                                +
+                                <i class="fa-solid fa-plus"></i>
                             </button>
 
-                            <div class="flex flex-align-center">
+                            <div class="flex flex-align-center color-brown-font">
                                 Crea Playlist
                             </div>
                         </div>
@@ -104,8 +107,9 @@
                             </ul>
                         </ul>
                     </nav>
+                </div>
 
-                    <!--Div box for users and install app-->
+                <div class="container">
                     <div class="user">
                         <p>
                             <a href="#">
@@ -124,26 +128,34 @@
                         </p>
                     </div>
                 </div>
+                    <!--Div box for users and install app-->
+                   
+                
 
 
             </header>
 
             <!--Hidden header-->
-            <aside class="none">
+            <header class="header-mini">
                 <div class="color-white txt-center">
-                    <i class="fa-solid fa-house"></i>
+                    <img src="img/logo-small.svg" alt="Logo Small Spotify">
                 </div>
 
                 <div class="color-white txt-center">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <img src="img/home.svg" alt="Home">
                 </div>
 
                 <div class="color-white txt-center">
-                    <i class="fa-solid fa-pause"></i>
+                    <img src="img/search.svg" alt="Search">
                 </div>
 
-            </aside>
+                <div class="color-white txt-center">
+                    <img src="img/libreria.svg" alt="Library">
+                </div>
 
+            </header>
+
+            <!--Main-->
             <main>
                 <section class="upgrade">
                     <div class="button flex flex-align-center flex-end">
