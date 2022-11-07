@@ -268,6 +268,16 @@ section.upgrade {
 section.upgrade div.button {
     height: 100%;
     padding-right: 2rem;
+
+}
+/*Formatting button*/
+section.upgrade div.button>button {
+    border: 1px solid white;
+    color: white;
+    background-color: #121319;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .7rem 2.5rem;
 }
 
 /*
