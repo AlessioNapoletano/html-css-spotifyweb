@@ -336,8 +336,7 @@ section.nav-content {
 }
 
 section.nav-content li{
-    text-align: center;
-    padding-right: .2rem;
+    padding-right: 3%;
 }
 
 /*Formatting hr under li:firts child element*/
