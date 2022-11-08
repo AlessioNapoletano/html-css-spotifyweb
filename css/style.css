@@ -74,7 +74,7 @@
     border-radius: 50%;
 }
 
-.font-size-large{
+.font-size-large {
     font-size: 1rem;
 }
 
@@ -87,7 +87,7 @@
     width: 30%;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
@@ -139,13 +139,13 @@ a {
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: white;
 }
 
 /*Color white for h2 and h3*/
 h2,
-h3{
+h3 {
     color: white;
 }
 
@@ -179,7 +179,7 @@ header div.container {
 }
 
 /*Padding div bottom on header*/
-header div.container:last-child{
+header div.container:last-child {
     padding: 1rem;
 }
 
@@ -196,7 +196,7 @@ header nav.nav {
     margin-bottom: 1rem;
 }
 
-header nav.nav ul:first-child li:first-child a{
+header nav.nav ul:first-child li:first-child a {
     border-left: 3px solid #d0ff53;
 }
 
@@ -207,7 +207,7 @@ header nav ul li {
 
 /*for correct spacing*/
 header nav li a,
-header h2{
+header h2 {
     padding: 0 1rem;
 }
 
@@ -238,17 +238,17 @@ header nav.playlist>div.crete-playlist button {
     padding: 1rem;
     background-color: #a1a1a1;
     border-radius: 0px;
-    
+
     margin: 0 .5rem 0 1rem;
 }
 
 /*for correct spacing*/
-header div.user span{
+header div.user span {
     padding-left: .5rem;
 }
 
 /*Color and font-size for element a (last child) in div.user box*/
-header div.user a:last-child{
+header div.user a:last-child {
     font-size: 1rem;
     color: white;
 }
@@ -294,7 +294,9 @@ main {
 section.upgrade {
     background-color: #121319;
     height: 80px;
-    width: 100%;
+    width: calc(100% - 200px);
+    position: fixed;
+    z-index: 1;
 }
 
 /*div button for height of parent (for flex center)*/
@@ -314,7 +316,7 @@ section.upgrade div.button>button {
 }
 
 /*Button in Hover*/
-section.upgrade div.button>button:hover{
+section.upgrade div.button>button:hover {
     font-size: 1rem;
 }
 
@@ -335,12 +337,12 @@ section.nav-content {
     margin: 0 auto;
 }
 
-section.nav-content li{
+section.nav-content li {
     padding-right: 3%;
 }
 
 /*Formatting hr under li:firts child element*/
-section.nav-content hr{
+section.nav-content hr {
     width: 50%;
     color: #d0ff53;
     margin: .1rem auto;
@@ -349,7 +351,7 @@ section.nav-content hr{
 }
 
 /*hover of li*/
-section.nav-content li:first-child:hover hr{
+section.nav-content li:first-child:hover hr {
     width: 100%;
 }
 
@@ -362,7 +364,7 @@ section.nav-content li:first-child:hover hr{
 */
 
 section.main-view {
-    padding: 1rem;
+    padding: 4rem 1rem 0rem 1rem;
 }
 
 /*Box di testo sopra i box delle canzoni*/
@@ -391,7 +393,7 @@ section.main-view div.card div.img img {
 /*for control display of p in div image*/
 section.main-view div.card div.img p {
     display: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
 }
 
@@ -401,7 +403,7 @@ section.main-view div.card div.img:hover p {
 }
 
 /*for change color of image*/
-section.main-view div.card div.img:hover img{
+section.main-view div.card div.img:hover img {
     opacity: 50%;
 }
 
@@ -454,6 +456,11 @@ footer div.img-description {
     padding: 0 1rem;
 }
 
+/*For underline p in div.image-description*/
+footer div.img-description p:hover {
+    text-decoration: underline;
+}
+
 /*Formatting icon in div icon*/
 footer div.icon i {
     font-size: 1.3rem;
@@ -489,11 +496,12 @@ footer div.long>div.player button i {
 }
 
 /*Formatting circle play*/
-footer div.long>div.player button i.fa-circle-play{
+footer div.long>div.player button i.fa-circle-play {
     font-size: 1.8rem;
 }
+
 /*Formatting circle play in hover*/
-footer div.long>div.player button i.fa-circle-play:hover{
+footer div.long>div.player button i.fa-circle-play:hover {
     font-size: 2rem;
 }
 
@@ -612,6 +620,10 @@ footer div.box:last-child div.bar:last-child {
         flex-wrap: wrap;
     }
 
+    section.main-view div.card div.img p{
+        font-size: 3rem;
+    }
+
     /*
     -----> END SECTION NAV-CONTENT ------------------------------------------------------------------------------------
     */
@@ -640,17 +652,17 @@ footer div.box:last-child div.bar:last-child {
         justify-content: center;
     }
 
-    footer div.icon i{
+    footer div.icon i {
         padding-bottom: .2rem;
     }
 
-    
+
 }
 
 
 /*x-small*/
 @media only screen and (max-width: 576px) {
-    
+
     /*HEADER AND ASIDE, SHOW AND HIDDEN*/
     header.header-full {
         display: none;
@@ -661,7 +673,7 @@ footer div.box:last-child div.bar:last-child {
     }
 
     /*Hover div (icon)*/
-    header.header-mini div:hover{
+    header.header-mini div:hover {
         border-left: 3px solid #1db954;
     }
 
@@ -670,6 +682,14 @@ footer div.box:last-child div.bar:last-child {
     */
     main {
         width: calc(100% - 50px);
+    }
+
+    section.upgrade {
+        background-color: #121319;
+        height: 80px;
+        width: calc(100% - 50px);
+        position: fixed;
+        z-index: 1;
     }
 
 }
