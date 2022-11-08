@@ -332,7 +332,7 @@ section.upgrade div.button>button:hover {
 /*Section nav, for category*/
 section.nav-content {
     width: 70%;
-    padding-top: .4rem;
+    padding-top: 5.4rem;
 
     margin: 0 auto;
 }
@@ -364,7 +364,7 @@ section.nav-content li:first-child:hover hr {
 */
 
 section.main-view {
-    padding: 4rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 /*Box di testo sopra i box delle canzoni*/
