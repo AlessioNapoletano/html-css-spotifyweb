@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 /*
                                                         GENERIC CLASS
 */
@@ -69,7 +71,9 @@
     border-radius: 50%;
 }
 
-
+.font-size-large{
+    font-size: 1rem;
+}
 
 .long {
     width: 60%;
@@ -104,7 +108,7 @@
 /*Background color for body*/
 body {
     background-color: #202020;
-    color: white;
+    color: #717171;
     font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     font-weight: bold;
@@ -125,7 +129,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #717171;
 }
 
 
@@ -143,11 +147,9 @@ a {
 /*HEADER*/
 header.header-full {
     width: 200px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 100px);
 
     background-color: black;
-
-    padding: 1rem;
 
     min-width: 200px;
 
@@ -159,11 +161,16 @@ header div.container {
     width: 100%;
 }
 
+header div.container:last-child{
+    padding: 1rem;
+}
+
 /*Logo*/
 header div.logo {
     height: 60px;
     width: 80%;
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
+    padding: 1rem;
 }
 
 /*Navigation bar*/
@@ -173,14 +180,12 @@ header nav.nav {
 
 /*for correct spacing*/
 header nav ul li {
-    padding-bottom: 1rem;
+    padding-bottom: .8rem;
 }
 
-/*Decoration none for element a, in the nav bar
-color a*/
-header ul li a {
-    text-decoration: none;
-    color: #717171;
+header nav li a,
+header h2{
+    padding: 0 1rem;
 }
 
 /*Formatting img in a element*/
@@ -192,7 +197,6 @@ header ul li a img {
 /*Hover of a*/
 header ul li a:hover {
     color: white;
-    padding: .5rem;
     border-left: 3px solid #d0ff53;
 }
 
@@ -216,22 +220,26 @@ header nav.playlist>div.crete-playlist button {
     padding: 1rem;
     background-color: #a1a1a1;
     border-radius: 0px;
+    margin-left:1rem;
 
     margin-right: .5rem;
 
 }
 
-
-/*box users and install app*/
-header div.user {
-    margin-top: 10rem;
+/*for correct spacing*/
+header div.user span{
+    padding-left: .5rem;
 }
 
-/*color of a*/
-header div.user a {
-    color: #717171;
+header div.user p:last-child {
+    font-size: 2rem;
 }
 
+/*Margin for hr*/
+header div.user hr {
+    margin: .3rem 0;
+
+}
 
 /*color a in hover*/
 header div.user a:hover {
@@ -490,7 +498,7 @@ footer div.long>div.player:last-child div.bar {
 }
 
 /*circle in bar of time*/
-footer div.long>div.player:last-child div>span.circle{
+footer div.long>div.player:last-child div>span.circle {
     display: block;
     padding: .5rem;
     border-radius: 50%;
@@ -498,7 +506,7 @@ footer div.long>div.player:last-child div>span.circle{
 }
 
 /*bar in hover*/
-footer div.long>div.player:last-child div.bar:hover{
+footer div.long>div.player:last-child div.bar:hover {
     background-color: #1db954;
 }
 
@@ -512,10 +520,11 @@ footer div.box:last-child>span.time {
     padding-right: .5rem;
 }
 
-footer div.box:last-child>div{
+footer div.box:last-child>div {
     height: .25rem;
     padding-right: 1rem;
 }
+
 /*Bar volume in the last div.box*/
 footer div.box:last-child div.bar {
     background-color: #c8c8c8;
@@ -527,11 +536,14 @@ footer div.box:last-child div.bar {
 footer div.box:last-child span {
     padding-right: .5rem;
 }
+
 /*Bar in hover*/
-footer div.box:last-child div.bar:hover{
+footer div.box:last-child div.bar:hover {
     background-color: #1db954;
 }
-footer div.box:last-child span.circle{
+
+/*span circle in a bar*/
+footer div.box:last-child span.circle {
     display: block;
     padding: .5rem;
     border-radius: 50%;
@@ -627,6 +639,11 @@ footer div.box:last-child div.bar:last-child {
 
     header.header-mini {
         display: block;
+    }
+
+    /*Hover div (icon)*/
+    header.header-mini div:hover{
+        border-left: 3px solid #1db954;
     }
 
     /*
