@@ -10,6 +10,7 @@
                                                         GENERIC CLASS
 */
 
+/*POSITION generic class*/
 .p-relative {
     position: relative;
 }
@@ -18,6 +19,7 @@
     position: absolute;
 }
 
+/*FLEX generic class*/
 .flex {
     display: flex;
 }
@@ -50,6 +52,7 @@
     flex-wrap: wrap;
 }
 
+/*CONTAINER generic class*/
 .container {
     width: 100%;
 }
@@ -59,6 +62,7 @@
     margin: 0 auto;
 }
 
+/*TEXT ALIGN generic class*/
 .txt-end {
     text-align: end;
 }
@@ -67,6 +71,7 @@
     text-align: center;
 }
 
+/*OTHER generic class*/
 .border-radius {
     border-radius: 50%;
 }
@@ -84,13 +89,14 @@
     width: 30%;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 
 /*
                                                 GENERIC CLASS FOR COLOR AND BACKGROUND COLOR
 */
-.color-brown-font {
-    color: #717171;
-}
 
 .color-white {
     color: white;
@@ -123,15 +129,23 @@ button {
     cursor: pointer;
 }
 
+/*Generic formatting li*/
 ul li {
     list-style: none;
 }
 
+/*Generic formatting a*/
 a {
     text-decoration: none;
     color: #717171;
+    cursor: pointer;
 }
 
+a:hover{
+    color: white;
+}
+
+/*Color white for h2 and h3*/
 h2,
 h3{
     color: white;
@@ -149,7 +163,7 @@ h3{
                                                         HEADER
 */
 
-/*HEADER*/
+/*HEADER - SHOW*/
 header.header-full {
     width: 200px;
     height: calc(100vh - 100px);
@@ -166,6 +180,7 @@ header div.container {
     width: 100%;
 }
 
+/*Padding div bottom on header*/
 header div.container:last-child{
     padding: 1rem;
 }
@@ -183,11 +198,16 @@ header nav.nav {
     margin-bottom: 1rem;
 }
 
+header nav.nav ul:first-child li:first-child a{
+    border-left: 3px solid #d0ff53;
+}
+
 /*for correct spacing*/
 header nav ul li {
     padding-bottom: .8rem;
 }
 
+/*for correct spacing*/
 header nav li a,
 header h2{
     padding: 0 1rem;
@@ -197,12 +217,6 @@ header h2{
 header ul li a img {
     width: 25px;
     margin-right: .4rem;
-}
-
-/*Hover of a*/
-header ul li a:hover {
-    color: white;
-    border-left: 5px solid #d0ff53;
 }
 
 /*Padding bottom for h2, child of nav.playlist*/
@@ -218,6 +232,7 @@ header nav.playlist>div.crete-playlist {
 /*Hover bottom*/
 header nav.playlist>div.crete-playlist:hover div {
     color: white;
+    cursor: pointer;
 }
 
 /*box for the first-child of div create*/
@@ -225,10 +240,8 @@ header nav.playlist>div.crete-playlist button {
     padding: 1rem;
     background-color: #a1a1a1;
     border-radius: 0px;
-    margin-left:1rem;
-
-    margin-right: .5rem;
-
+    
+    margin: 0 .5rem 0 1rem;
 }
 
 /*for correct spacing*/
@@ -236,8 +249,10 @@ header div.user span{
     padding-left: .5rem;
 }
 
-header div.user p:last-child {
-    font-size: 2rem;
+/*Color and font-size for element a (last child) in div.user box*/
+header div.user a:last-child{
+    font-size: 1rem;
+    color: white;
 }
 
 /*Margin for hr*/
@@ -246,26 +261,20 @@ header div.user hr {
 
 }
 
-/*color a in hover*/
-header div.user a:hover {
-    color: white;
-}
-
-
-/*header nascosto*/
+/*                                                  HEADER HIDDEN                                               */
 header.header-mini {
     display: none;
     background-color: black;
     width: 50px;
 }
 
+/*Formatting img in header */
 header.header-mini div>img {
     margin-top: .5rem;
     width: 60%;
 }
 
-
-/*ain
+/*
                                                         END HEADER
 */
 
@@ -302,7 +311,6 @@ section.upgrade div.button>button {
     border: 1px solid white;
     color: white;
     background-color: #121319;
-    font-size: .8rem;
     font-weight: bold;
     padding: .7rem 2.5rem;
 }
@@ -334,9 +342,9 @@ section.nav-content li{
     padding-right: .2rem;
 }
 
-/*Color a in Hover, and border bottom*/
-section.nav-content a:hover {
-    color: white;
+/*For border-bottom at firts child of li*/
+section.nav-content li:first-child a{
+    padding-bottom: .2rem;
     border-bottom: 2px solid #d0ff53;
 }
 
@@ -352,16 +360,16 @@ section.main-view {
     padding: 1rem;
 }
 
-/*padding for h2 element child of section main view*/
-section.main-view div.title-row>h2 {
-    padding-bottom: .8rem;
-    font-size: 2rem;
-}
-
 /*Box di testo sopra i box delle canzoni*/
 section.main-view div.title-row {
     margin: 1rem 0;
     width: 100%;
+}
+
+/*padding for h2 element child of section main view*/
+section.main-view div.title-row>h2 {
+    padding-bottom: .8rem;
+    font-size: 2rem;
 }
 
 /*box per le canzoni*/
@@ -379,8 +387,8 @@ section.main-view div.card div.img img {
 section.main-view div.card div.img p {
     display: none;
     font-size: 4rem;
+    color: white;
 }
-
 
 /*for control display of p in div image*/
 section.main-view div.card div.img:hover p {
@@ -388,7 +396,7 @@ section.main-view div.card div.img:hover p {
 }
 
 /*for change color of image*/
-section.main-view div.card div.img:hover {
+section.main-view div.card div.img:hover img{
     opacity: 50%;
 }
 
@@ -398,12 +406,7 @@ section.main-view div.card div.description h3,
 section.main-view div.card div.description p {
     padding-top: .5rem;
     font-size: 1rem;
-
-}
-
-/*Possibile metterlo internamente nell'index*/
-section.main-view div.card div.description p {
-    color: #717171;
+    text-align: center;
 
 }
 
@@ -591,10 +594,6 @@ footer div.box:last-child div.bar:last-child {
 
 /*medium*/
 @media only screen and (max-width: 992px) {
-    body {
-        background-color: red;
-    }
-
     /*
     -----> SECTION NAV-CONTENT
     */
@@ -622,7 +621,6 @@ footer div.box:last-child div.bar:last-child {
     -----> SECTION NAV-CONTENT
     */
     section.main-view div.card {
-
         width: calc((100% / 4) - .5rem);
     }
 
@@ -633,23 +631,26 @@ footer div.box:last-child div.bar:last-child {
 
 /*small*/
 @media only screen and (max-width: 768px) {
-    body {
-        background-color: yellow;
-    }
-
     section.main-view div.card {
-
         width: calc((100% / 2) - .5rem);
     }
+
+    footer div.icon {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer div.icon i{
+        padding-bottom: .2rem;
+    }
+
+    
 }
 
 
 /*x-small*/
 @media only screen and (max-width: 576px) {
-    body {
-        background-color: aqua;
-    }
-
+    
     /*HEADER AND ASIDE, SHOW AND HIDDEN*/
     header.header-full {
         display: none;
