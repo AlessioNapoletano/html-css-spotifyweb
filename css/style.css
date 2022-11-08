@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 /*
                                                         GENERIC CLASS
 */
@@ -342,10 +340,18 @@ section.nav-content li{
     padding-right: .2rem;
 }
 
-/*For border-bottom at firts child of li*/
-section.nav-content li:first-child a{
-    padding-bottom: .2rem;
-    border-bottom: 2px solid #d0ff53;
+/*Formatting hr under li:firts child element*/
+section.nav-content hr{
+    width: 50%;
+    color: #d0ff53;
+    margin: .1rem auto;
+
+    transition: .5s;
+}
+
+/*hover of li*/
+section.nav-content li:first-child:hover hr{
+    width: 100%;
 }
 
 /*
@@ -578,14 +584,9 @@ footer div.box:last-child div.bar:last-child {
     width: 2rem;
 }
 
-
-
-
 /*
                                                         END FOOTER
 */
-
-
 
 
 /*
